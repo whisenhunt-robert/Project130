@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Permanent+Marker&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #1770cf;
+  --secondary-color: #ffffff;
+  --accent1-color: #000000;
+  --accent2-color: #6fccff;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Permanent Marker";
+  --paragraph-font: "Abyssinica SIL", Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #1770cf;  /* headlines on a white background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+  --paragraph-color: #000000; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #115b9b;
+  --nav-link-color: #ffffff;
+  --nav-background-color: #115b9b;
+  --nav-hover-link-color: #000000;
+  --nav-hover-background-color: #1770cf;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+h5, h6 {
+    font-family: var(--paragraph-font);
+}
+
+img {
+    width: 20%;
+}
+
+li {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+li p {
+    font-family: var(--paragraph-font);
+    color:var(--paragraph-color)
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+  }
+
+header .logo{
+  width: 100%;
+}
+
+header .logo2{
+  width: 58%
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+  display:grid;
+  grid-template-columns: 3fr 2fr 3fr;
+}
+
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+main {
+  text-align: center;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  font-family: var(--heading-font);
+  background-color: var(--paragraph-background-color);
+  display:grid;
+  grid-template-columns: 1fr 1fr 1ex 1fr 1fr 1fr;
+}
+
+footer > h1, footer > h2 {
+  color: var(--headline-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 8em;
+  text-align: center;
+  font-size: 1.5em;
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+footer a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 1px;
+}
+footer a:link, footer a:visited {
+  color: var(--nav-link-color);
+}
+footer a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+footer img {
+  text-align: center;
+  width: 50%;
+}
+footer p {
+  padding:1em;
+  min-width: 120px;
+  color: var(--nav-link-color);
+  text-align: end;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
