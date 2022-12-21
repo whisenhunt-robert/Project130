@@ -23,10 +23,34 @@
   --nav-hover-background-color: #1770cf;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+h1, h3 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
 }
+
+h2, h5, h6 {
+    font-family: var(--paragraph-font);
+}
+
+img {
+    width: 20%;
+}
+
+li {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+li p {
+    font-family: var(--paragraph-font);
+    color:var(--paragraph-color)
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+  }
 
 header .logo{
   width: 100%;
@@ -117,6 +141,7 @@ footer a:hover {
 }
 footer img {
   text-align: center;
+  width: 50%;
 }
 footer p {
   padding:1em;
